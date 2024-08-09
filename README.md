@@ -1,13 +1,13 @@
-# LMS Frontend
+#LMS Frontend
 
-### Setup instructions
+### setup instructions
 
 1 clone the project
 ```git clone https://github.com/nishant0patil/lms-frontend-en.git
 ```
 
 2 move into the directory
-```cd lms-frontend
+```cd lms_frontend
 ```
 
 3 install dependencies
@@ -15,10 +15,11 @@
 ```
 
 4 Run the server
-```npm run dev 
+```npm run dev
 ```
 
 ### how to setup tailwind in your project[link]
+https://tailwindcss.com/docs/guides/vite
 
 1 install tailwind and other dependencies
 ```npm install -D tailwindcss postcss autoprefixer
@@ -31,3 +32,11 @@
 "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
 ```
+4 Add the tailwind directives on the top of index.css file
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
+5 then run the server tailwind should be integrated
